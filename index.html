@@ -27,7 +27,7 @@
             <a href="#" class="nav__link">Блог</a>
           </nav>
           
-          <button class="button">Получить</button>
+          <button data-toggle='modal' class="button">Получить</button>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
             клиентов. Теперь я делюсь своими
             золотыми стратегиями ценообразования на творческую работу.</p>
           <div class="buttons">
-            <button class="buy">Купить сейчас</button>
+            <button data-toggle='modal' class="buy">Купить сейчас</button>
             <a href="#" class="read">Читать демо</a>
           </div>
         </div>
@@ -56,6 +56,32 @@
   <!-- /.book -->
 
 
-  
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="Icon: close">
+      </a>
+      <h3 class="modal__title  modal__send modal__title--mb-3">Buy now</h3>
+      <form action="send.php" method="POST" class=" modal__form form ">
+        <input type="text" class="input modal__input" placeholder="Your Full Name" name="name" required minlength="2">
+        <input type="tel" class="input modal__input phone" placeholder="Phone Number" name="phone" required
+          minlength="18">
+        <input type="email" class="input modal__input" placeholder="Email" name="email" required>
+        <textarea cols="30" rows="10" class=" message modal__message" placeholder="Message" name="message"></textarea>
+        <div class="modal__bottom">
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--/.modal-->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script> 
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
