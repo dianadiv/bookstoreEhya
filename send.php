@@ -16,7 +16,7 @@ $body = "
 <h2>Новая покупка</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br> 
-<b>Email:</b>$email<br>
+<b>Email:</b> $email<br>
 <b>Сообщение:</b><br>$message<br><br>
 
 ";

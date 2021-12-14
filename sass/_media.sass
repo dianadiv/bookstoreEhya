@@ -1,13 +1,137 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .buy
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: 30px
+  .read
+    padding-right: 30px
+    padding-left: 30px
+  .book
+    &__name
+      margin-top: 15px
+    &__description
+      margin-bottom: 36px
+      margin-top: 15px
 @media (max-width: 992px)
   .container
     max-width: 700px
+  .book
+    &-info
+      display: flex
+      flex-direction: column
+    &__name
+      text-align: center
+    &__author
+      display: flex
+      justify-content: center
+    &__description
+      text-align: center
+    &__image
+      left: 32%
+  .buttons
+    justify-content: center
+  .buy
+    margin-right: 50px
+    padding: 15px 32px 13px 32px
+  .read
+    padding: 17px 50px 15px 50px
 @media (max-width: 767px)
   .container
     max-width: 576px
     width: 95%
+  body
+    padding-top: 111px
+  .header
+    &--fixed
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      z-index: 100
+  .menu
+    &-button
+      display: flex
+      width: 22px
+      height: 17px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: white
+      cursor: pointer
+      &__line
+        width: 22px
+        height: 2.2px
+        background-color: #3A4C66
+        border-radius: 6px
+  .navigation
+    display: none
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    top: 111px
+    background-color: $main
+    overflow: scroll
+    &--visible
+      display: flex
+      flex-direction: column
+      justify-content: start
+  .nav
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 30px
+    &__link
+      color: #fff
+      margin-bottom: 15px
+      margin-left: 0
+  .book
+    &__image
+      left: 28%
 @media (max-width: 576px)
   .container
     width: 88%
+  .header-wrapper
+    padding: 23px 0 18px 0
+  .book
+    margin-top: 36px
+    margin-bottom: 56px
+    &__name
+      margin-top: 0
+      font-size: 32px
+      line-height: 40px
+      max-width: 280px
+      margin: auto
+      margin-bottom: 24px
+    &__author
+      font-size: 16px
+      line-height: 24px
+    &__description
+      margin-top: 32px
+      margin-bottom: 17px
+      font-size: 16px
+      line-height: 23px
+    &-info
+      grid-gap: 45px
+    &__right
+      height: 332px
+    &__image
+      height: 214px
+      width: 143px
+  .buttons
+    flex-direction: column
+  .buy
+    padding: 9px 12px 9px 12px
+    margin: auto
+    margin-bottom: 15px
+    width: 176px
+  .read
+    padding: 9px 25px 9px 25px
+    font-size: 16px
+    line-height: 22px
+    width: 176px
+    margin: auto

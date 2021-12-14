@@ -13,14 +13,14 @@
     rel="stylesheet">
 </head>
 <body>
-  <header class="header">
+  <header class="header header--fixed">
     <div class="container">
       <div class="header-wrapper">
         <a href="#" class="logo">
           <img src="img/logo.svg" alt="Logo: Ehya" class="logo__image">
         </a>
 
-        <div class="navigation">
+        <div class=" navigation navigation--visible">
           <nav class="nav">
             <a href="#" class="nav__link">Рекомендации</a>
             <a href="#" class="nav__link">Книги</a>
@@ -29,6 +29,12 @@
           
           <button data-toggle='modal' class="button">Получить</button>
         </div>
+
+        <button class="menu-button navbar-top__menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
       </div>
     </div>
   </header>
@@ -54,8 +60,6 @@
     </div>
   </section>
   <!-- /.book -->
-
-
   <div class="modal">
     <div class="modal__overlay"></div>
     <div class="modal__dialog">

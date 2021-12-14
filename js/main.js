@@ -25,6 +25,8 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+
+   
 });
   //Обработка форм
   $(".form").each(function() {
@@ -51,3 +53,9 @@ $(document).ready(function () {
   });
   AOS.init();
 });
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function(){
+  console.log("Клик по кнопке меню");
+  document.querySelector(".navigation").classList.toggle('navigation--visible')
+})
