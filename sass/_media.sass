@@ -28,8 +28,6 @@
       justify-content: center
     &__description
       text-align: center
-    &__image
-      left: 32%
   .buttons
     justify-content: center
   .buy
@@ -42,7 +40,7 @@
     max-width: 576px
     width: 95%
   body
-    padding-top: 111px
+    padding-top: 105px
   .header
     &--fixed
       position: fixed
@@ -80,6 +78,7 @@
       display: flex
       flex-direction: column
       justify-content: start
+      align-items: center
   .nav
     display: flex
     flex-direction: column
@@ -89,16 +88,13 @@
       color: #fff
       margin-bottom: 15px
       margin-left: 0
-  .book
-    &__image
-      left: 28%
 @media (max-width: 576px)
   .container
     width: 88%
   .header-wrapper
     padding: 23px 0 18px 0
   .book
-    margin-top: 36px
+    margin-top: 0px
     margin-bottom: 56px
     &__name
       margin-top: 0
@@ -116,7 +112,7 @@
       font-size: 16px
       line-height: 23px
     &-info
-      grid-gap: 45px
+      grid-gap: 40px
     &__right
       height: 332px
     &__image
@@ -125,13 +121,16 @@
   .buttons
     flex-direction: column
   .buy
-    padding: 9px 12px 9px 12px
+    padding: 6px 12px 6px 12px
     margin: auto
     margin-bottom: 15px
     width: 176px
   .read
-    padding: 9px 25px 9px 25px
+    padding: 6px 25px 6px 25px
     font-size: 16px
     line-height: 22px
     width: 176px
     margin: auto
+  .navigation
+    min-width: 320px
+    top: 74.2px
