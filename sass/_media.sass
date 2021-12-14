@@ -14,6 +14,27 @@
     &__description
       margin-bottom: 36px
       margin-top: 15px
+  .library-wrapper
+    grid-template-columns: 1fr
+  .recommendations
+    margin: auto
+    column-gap: 10px
+    row-gap: 10px
+    &__title
+      display: flex
+      justify-content: center
+  .top
+    &__title
+      display: flex
+      justify-content: center
+      margin-top: 50px
+    &__books
+      grid-column: 1 / 3
+  .all-top
+    display: grid
+    grid-template-columns: 1fr 1fr
+  .line
+    grid-column: 1 / 3
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -35,6 +56,17 @@
     padding: 15px 32px 13px 32px
   .read
     padding: 17px 50px 15px 50px
+  .recommendations
+    grid-template-columns: repeat(2, 345px)
+  .book-first,
+  .book-second,
+  .book-third,
+  .book-fourth,
+  .book-fifth,
+  .book-sixth
+    grid-template-columns: 180px 150px
+    &__image
+      margin-right: 0
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -88,6 +120,79 @@
       color: #fff
       margin-bottom: 15px
       margin-left: 0
+  .recommendations
+    display: flex
+    flex-direction: column
+    width: 100%
+    &__title
+      margin-bottom: 60px
+    &-more
+      display: flex
+      justify-content: center
+      padding-top: 12px
+      padding-bottom: 12px
+  .book-second,
+  .book-third,
+  .book-fourth,
+  .book-fifth,
+  .book-sixth
+    display: none
+  .book-first
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    height: 310px
+    margin-bottom: 25px
+    &__image
+      position: absolute
+      width: 96px
+      height: 137px
+      top: -33px
+    &__info
+      margin-top: 107px
+      justify-content: center
+      align-items: center
+    &__name
+      font-weight: 500
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 12px
+    &__information
+      font-size: 14px
+      line-height: 20px
+      padding-bottom: 16px
+    &__price
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      padding-right: 5px
+      margin-bottom: 20px
+    &__buy
+      padding-right: 29px
+      padding-left: 26px
+  .recommendations-more
+    padding-top: 10px
+    &__button
+      font-size: 14px
+  .all-top
+    display: flex
+    flex-direction: column
+  .top-first,
+  .top-second,
+  .top-third,
+  .top-fourth
+    display: flex
+    justify-content: center
+    &__info
+      width: 250px
+  .top
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-top: 55px
+      margin-bottom: 36px
 @media (max-width: 576px)
   .container
     width: 88%
@@ -134,3 +239,55 @@
   .navigation
     min-width: 320px
     top: 74.2px
+  .library
+    &-wrapper
+      display: flex
+      flex-direction: column
+  .recommendations
+    &__title
+      font-size: 28px
+      line-height: 36px
+      width: 100%
+  .book-first
+    &__image
+      position: absolute
+      width: 96px
+      height: 137px
+      top: -25px
+      margin: 0
+
+  .top-first,
+  .top-second,
+  .top-third,
+  .top-fourth
+    margin-left: 11px
+    margin-bottom: 0
+    &__photo
+      width: 96px
+      height: 145px
+      object-fit: cover
+    &__image
+      width: 96px
+      height: 145px
+    &__info
+      padding-left: 12px
+    &__name
+      font-size: 15px
+      line-height: 24px
+      margin-bottom: 12px
+      margin-top: 5px
+      width: 140px
+    &__price
+      margin-bottom: 14px
+  .top-first
+    margin-bottom: 10px
+  .top-second
+    margin-bottom: 10px
+  .top-third
+    margin-bottom: 10px
+  hr
+    margin-top: 35px
+  .top
+    &__books
+      margin-top: 11px
+      margin-bottom: 20px
