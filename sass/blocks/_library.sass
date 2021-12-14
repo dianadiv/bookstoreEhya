@@ -1,0 +1,214 @@
+.library-wrapper
+  display: grid
+  grid-template-columns: 745px 360px
+  column-gap: 36px
+  margin-bottom: 79px
+.recommendations
+  display: grid
+  grid-template-columns: repeat(2, 358px)
+  grid-template-rows: 40px repeat(3, 264px) 68px
+  column-gap: 30px
+  row-gap: 29px
+  &__title
+    display: grid
+    grid-column: 1/3
+    font-family: "Roboto Condensed"
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 40px
+    letter-spacing: 0.2px
+    margin-top: 0
+    margin-bottom: 0
+    color: $main
+  &-more
+    margin-top: -6px
+    padding-top: 22px
+    display: grid
+    grid-column: 1/3
+    background-color: rgba(21, 101, 216, 0.1)
+    border-radius: 8px
+    border: 2px solid $buttons
+    letter-spacing: 0.2px
+    &__button
+      font-family: Roboto Condensed
+      text-decoration: none
+      color: $buttons
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      text-align: center
+.book
+  &-first,
+  &-second,
+  &-third,
+  &-fourth,
+  &-fifth,
+  &-sixth
+    display: grid
+    grid-template-columns: 190px 167px
+    height: 260px
+    border: 2px solid $background
+    border-radius: 8px
+    &__image
+      width: 160px
+      height: 240px
+      margin: 7px 20px 14px 11px
+    &__photo
+      height: 100%
+      width: 100%
+      border-radius: 8px
+      object-fit: cover
+  &-first,
+  &-second,
+  &-third,
+  &-fourth,
+  &-fifth,
+  &-sixth
+    &__name
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 0.2px
+      margin-top: 23px
+      margin-bottom: 16px
+      color: $main
+  &-first,
+  &-second,
+  &-third,
+  &-fourth,
+  &-fifth,
+  &-sixth
+    &__info
+      display: flex
+      flex-direction: column
+  &-first,
+  &-second,
+  &-third,
+  &-fourth,
+  &-fifth,
+  &-sixth
+    &__information
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      color: $main
+      padding-bottom: 24px
+    &__price
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 0.2px
+      color: $buttons
+      margin-bottom: 25px
+    &__buttons
+      display: flex
+      align-items: flex-end
+    &__buy
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      color: #fff
+      padding: 7px 20px 7px 20px
+      border-radius: 2000px
+      background-color: $main
+      border: none
+      margin-right: 22px
+    &__like
+      &-image
+        width: 18px
+        height: 30px
+.top
+  &__title
+    display: grid
+    grid-column: 1/3
+    font-family: "Roboto Condensed"
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 40px
+    letter-spacing: 0.2px
+    margin-top: 0
+    margin-bottom: 30px
+  &-first,
+  &-second,
+  &-third,
+  &-fourth
+    display: flex
+    margin-bottom: 12px
+    margin-top: 24px
+    margin-left: 24px
+    &__image
+      width: 119px
+      height: 177px
+    &__photo
+      border-radius: 8px
+      object-fit: none
+    &__info
+      padding-left: 27px
+    &__info
+      display: flex
+      flex-direction: column
+    &__name
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      color: $main
+      letter-spacing: 0.2px
+      margin-bottom: 15px
+      margin-top: 10px
+    &__price
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 0.2px
+      color: $buttons
+      margin-bottom: 22px
+    &__buy
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      color: #fff
+      padding: 7px 20px 7px 20px
+      border-radius: 2000px
+      background-color: $main
+      border: none
+      width: 100px
+  &__books
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    letter-spacing: 0.2px
+    color: $buttons
+    margin-top: 25px
+    margin-bottom: 27px
+.all-top
+  background-color: $background
+  border-radius: 8px
+  display: flex
+  flex-direction: column
+hr
+  border: 1px solid #ECEEF2
+  background-color: #ECEEF2
+  width: 85%
+  height: 1px
