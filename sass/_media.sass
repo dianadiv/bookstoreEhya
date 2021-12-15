@@ -73,6 +73,8 @@
     width: 95%
   body
     padding-top: 105px
+  .modal__dialog
+    padding: 27px 40px
   .header
     &--fixed
       position: fixed
@@ -197,7 +199,9 @@
   .container
     width: 88%
   .header-wrapper
-    padding: 23px 0 18px 0
+    padding: 17px 0 18px 0
+  .modal__dialog
+    padding: 17px 20px
   .book
     margin-top: 0px
     margin-bottom: 56px
@@ -291,3 +295,23 @@
     &__books
       margin-top: 11px
       margin-bottom: 20px
+@media (min-width: 992px)
+  .nav
+    &__link:hover
+      text-decoration: underline
+  .button-1
+    &:hover
+      color: #fff
+      background-color: $buttons
+  .button-2
+    &:hover
+      color: $buttons
+      background-color: #fff
+  .button-3
+    &:hover
+      background-color: $buttons
+  .button-4
+    &:hover
+      background-color: white
+  .fas:active
+    color: red
