@@ -1,0 +1,64 @@
+.about-book__line
+  max-width: 1140px
+  margin-bottom: 60px
+  height: 0px
+  margin-right: 0
+  margin-left: 0
+  border: 1px solid #ECEEF2
+  background-color: #ECEEF2
+.swiper
+  max-width: 1140px
+  height: 240px
+  position: relative
+  margin-bottom: 100px
+  &-slide
+    border: 1px solid #ECEEF2
+    border-radius: 8px
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 265px!important
+    height: 240px
+
+.slider
+  &-button
+    position: absolute
+    top: 91px
+    z-index: 99
+    width: 56px
+    height: 56px
+    border: none
+    border-radius: 50%
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-color: #fff
+    box-shadow: 0px 10px 8px -2px rgba(182, 197, 208, 0.2)
+    &--next
+      right: 5px
+      background-image: url(../img/next.svg)
+
+    &--prev
+      background-image: url(../img/prev.svg)
+.slide
+  &-photo
+    margin-top: 40px
+    margin-bottom: 40px
+  &-title
+    font-family: Roboto
+    font-style: normal
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    text-align: center
+    letter-spacing: 0.2px
+    color: $main
+    margin-top: 0
+    margin-bottom: 12px
+  &-about
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    color: $description

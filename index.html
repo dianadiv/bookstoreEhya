@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ehya Bookstore</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +14,7 @@
     rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+   
 </head>
 <body>
   <header class="header header--fixed">
@@ -78,7 +80,6 @@
               <div class="book-first__buttons">
                 <button data-toggle='modal' class="book-first__buy button-3">Купить</button>
                 <a  class="book-first__like like">
-                  <!--<img src="img/like.svg" alt="Photo of like" class="book-first__like-image like-image">-->
                   <i class="fas fa-heart"></i>
                 </a>
               </div>
@@ -209,7 +210,7 @@
                 <button data-toggle='modal' class="top-fourth__buy button-3">Купить</button>
               </div>
             </div>
-            <hr class="line">
+            <hr class="library-line">
             <h3 class="top__books">ЛУЧШИЕ КНИГИ</h3>
           </div>
         </div>
@@ -217,8 +218,91 @@
     </div>
   </secrion>
   <!-- /.library -->
-
-  <!-- /.book -->
+  <section class="about-book">
+    <div class="container">
+      <hr class="about-book__line line">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="img/slider-1.svg" alt="Photo of icon" class="slide-photo">
+            <h3 class="slide-title">Бизнес & Финансы</h3>
+            <span class="slide-about">Книги про мир бизнеса</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider-2.svg" alt="Photo of icon" class="slide-photo">
+            <h3 class="slide-title">Самомотиватия</h3>
+            <span class="slide-about">Книги о мотивации</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider-3.svg" alt="Photo of icon" class="slide-photo">
+            <h3 class="slide-title">Романы Теленовеллы</h3>
+            <span class="slide-about">Книги с крутыми историями</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider-4.svg" alt="Photo of icon" class="slide-photo">
+            <h3 class="slide-title">Навыки будущего</h3>
+            <span class="slide-about">Книги для самоподготовки</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider-2.svg" alt="Photo of icon" class="slide-photo">
+            <h3 class="slide-title">Образование</h3>
+            <span class="slide-about">Книги для самообразования</span>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/slider-4.svg" alt="Photo of icon" class="slide-photo">
+            <h3 class="slide-title">История прошлого</h3>
+            <span class="slide-about">Книги для изучения истории</span>
+          </div>
+        </div> 
+        <!-- If we need navigation buttons -->
+        <button class="slider-button slider-button--prev"></button>
+        <button class="slider-button slider-button--next"></button>
+      </div>
+    </div>
+  </section>
+  <!-- /.about-book -->
+  <section class="unreleased">
+    <div class="container">
+      <div class="unreleased__wrapper">
+        <h1 class="unrealeased__title">Неизданные книги</h1>
+        <div class="swiper1">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper1-slide">
+               <img src="img/unreleased-1.png" alt="Photo of book" class="unreleased__picture">
+            </div>
+            <div class="swiper1-slide">
+              <img src="img/unreleased-2.png" alt="Photo of book" class="unreleased__picture">
+            </div>
+            <div class="swiper1-slide">
+              <img src="img/unreleased-3.png" alt="Photo of book" class="unreleased__picture">
+            </div>
+            <div class="swiper1-slide">
+              <img src="img/unreleased-4.png" alt="Photo of book" class="unreleased__picture">
+            </div>
+            <div class="swiper1-slide">
+              <img src="img/unreleased-5.png" alt="Photo of book" class="unreleased__picture">
+            </div> 
+            <div class="swiper1-slide">
+              <img src="img/unreleased-4.png" alt="Photo of book" class="unreleased__picture">
+            </div>
+            <div class="swiper1-slide">
+              <img src="img/unreleased-3.png" alt="Photo of book" class="unreleased__picture">
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <button class="slider1-button slider1-button--prev"></button>
+          <button class="slider1-button slider1-button--next"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /.ureleased -->
+   
   <div class="modal" >
     <div class="modal__overlay"></div>
     <div class="modal__dialog">
@@ -246,6 +330,7 @@
   <script src="js/jquery.mask.min.js"></script> 
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

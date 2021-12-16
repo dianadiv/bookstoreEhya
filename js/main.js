@@ -26,7 +26,13 @@ $(document).ready(function () {
     modalDialog.removeClass('modal__dialog--visible');
   }
 
-   
+  
+		var modalOverlay = $('.modal__overlay');
+    var modalDialog = $('.modal__dialog');
+		$(modalOverlay).mouseup(function () {
+    modalOverlay.removeClass('modal__overlay--visible');
+    modalDialog.removeClass('modal__dialog--visible');
+    });
 
 });
   //Обработка форм
@@ -55,8 +61,26 @@ $(document).ready(function () {
   AOS.init();
 });
 
-var menuButton = $(".menu-button");
-  menuButton.on('click', function(){
-   $(".navigation").toggleClass("navigation--visible");
-   
-  });
+const swiper = new Swiper('.swiper', { 
+  spaceBetween: 26,
+  slidesPerView: 4, 
+  loop: false, 
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider-button--next',
+    prevEl: '.slider-button--prev',
+  },
+  
+});
+
+const swiper1 = new Swiper('.swiper1', { 
+  spaceBetween: 27,
+  slidesPerView: 5, 
+  loop: false, 
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider1-button--next',
+    prevEl: '.slider1-button--prev',
+  },
+  
+});
